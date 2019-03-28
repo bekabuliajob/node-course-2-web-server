@@ -54,6 +54,14 @@ app.get('/about',(req,res)=>{
     });
 })
 
+app.get('/projects',(req,res)=>{
+    res.render('about.hbs', {
+        pageTitle:'about page',
+        currentyear:new Date().getFullYear(),
+        welcomeMessage:'portfolio'
+    });
+})
+
 app.get('/bad',(req,res)=>{
     res.send({
         errormessage:'error'
