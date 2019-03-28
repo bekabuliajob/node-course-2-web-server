@@ -55,8 +55,8 @@ app.get('/about',(req,res)=>{
 })
 
 app.get('/projects',(req,res)=>{
-    res.render('about.hbs', {
-        pageTitle:'about page',
+    res.render('projects.hbs', {
+        pageTitle:'projects page',
         currentyear:new Date().getFullYear(),
         welcomeMessage:'portfolio'
     });
